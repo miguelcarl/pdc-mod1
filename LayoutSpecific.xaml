@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pdc60ResourceDictionary.LayoutSpecific">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
+            <Grid>
+                <Grid.Resources>
+                    <Color x:Key="BackgroundColor">beige</Color>
+                    <Style x:Key="TextStyleOne" TargetType="Label">
+                        <Setter Property="TextColor" Value="Blue" />
+                        <Setter Property="FontSize" Value="25" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                    </Style>
+                    <Style x:Key="TextStyleTwo" TargetType="Label">
+                        <Setter Property="TextColor" Value="Red" />
+                        <Setter Property="FontSize" Value="35" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                    </Style>
+                    <Style x:Key="TextStyleThree" TargetType="Label">
+                        <Setter Property="TextColor" Value="Yellow" />
+                        <Setter Property="FontSize" Value="45" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                    </Style>
+                </Grid.Resources>
+                <Label Text="HELLO! I'M BLUE"
+                        Style="{StaticResource TextStyle}" />
+                <Label Text="HELLO! I'M RED"
+                        Style="{StaticResource TextStyleTwo}" />
+                <Label Text="HELLO! I'M YELLOW"
+                        Style="{StaticResource TextStyleThree}" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

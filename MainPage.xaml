@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pdc60ResourceDictionary.MainPage">
+
+    <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
+        <Grid>
+            <Grid.Resources>
+                <!-- VIEW SPECIFIC -->
+                <Color x:Key="BackgroundColor">orange</Color>
+                <Style x:Key="TextStyle" TargetType="Label">
+                    <Setter Property="TextColor" Value="Blue" />
+                    <Setter Property="FontSize" Value="25" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Style>
+                <Picker x:Key="Picker" Title="Choose a number" SelectedIndex="0">
+                    <Picker.ItemsSource>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Grid.Resources>
+            <Label Text="HELLO! I'M BLUE"
+               Style="{StaticResource TextStyle}" />
+            <Picker>
+                <Picker.ItemsSource>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                </Picker.ItemsSource>
+            </Picker>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

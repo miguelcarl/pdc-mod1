@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pdc60ResourceDictionary.PageLevel">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BackgroundColor">black</Color>
+            <Style x:Key="TextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="20" />
+            </Style>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Green" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="CornerRadius" Value="7" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
+        <Label Text="White text" Style="{StaticResource TextStyle}" />
+        <Button Text="Green Button"
+                Style="{StaticResource ButtonStyle}"
+                Clicked="Button_Clicked" />
+    </StackLayout>
+</ContentPage>
